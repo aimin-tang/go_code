@@ -40,7 +40,7 @@ func getResult(round int) int {
 func main() {
 	target := getTarget()
 	var i int
-	for i = 1; i < 10; i++ {
+	for i = 1; i < 3; i++ {
 		result := getResult(i)
 		if result == target {
 			fmt.Println("Good Guess!")
@@ -52,7 +52,7 @@ func main() {
 		}
 	}
 
-	if i == 10 {
-		fmt.Println("Failed: too many guesses!")
+	if i == 3 {
+		fmt.Printf("Failed: too many guesses. it was: %v\n", target)
 	}
 }
